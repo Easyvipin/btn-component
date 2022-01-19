@@ -1,0 +1,11 @@
+{
+  "name": "btn-component",
+  "version": "1.0.0",
+  "description": "React resuable btn component of various styles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vipin Chandra",
+  "license": "MIT"
+}
