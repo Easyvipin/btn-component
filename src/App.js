@@ -1,9 +1,13 @@
 import Button from "./Button";
+import FlexContainer from "./Component/FlexContainer";
 
 function App() {
   return (
     <div className="App">
-      <Button variant="outline" size="sm" color="primary" disabled />
+      <h2>Button</h2>
+      <FlexContainer>
+        <Button variant="outline" size="sm" startIcon="fa fa-glass" disabled />
+      </FlexContainer>
     </div>
   );
 }
