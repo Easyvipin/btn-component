@@ -26,6 +26,18 @@ code {
   border: 2px solid black;
   width: 100%;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+}
+
+h6 {
+  color: rgb(114, 111, 111);
+  font-style: normal;
+}
+
 /* button  styles */
 
 button {
@@ -58,7 +70,7 @@ button {
 
 .text {
   border: none;
-  background-color: none;
+  background: none;
 }
 
 .text:hover,

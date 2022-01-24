@@ -1,13 +1,24 @@
 import Button from "./Button";
 import FlexContainer from "./Component/FlexContainer";
+import { data } from "./data";
 
 function App() {
+  const renderButtons = () => {
+    return data.map((item) => (
+      <FlexContainer>
+        {item.text.map((each, index) => (
+          <div className="card" key={index}>
+            <h6>{each}</h6>
+            <Button {...item.properties[index]}></Button>
+          </div>
+        ))}
+      </FlexContainer>
+    ));
+  };
   return (
     <div className="App">
-      <h2>Button</h2>
-      <FlexContainer>
-        <Button variant="outline" size="sm" startIcon="fa fa-glass" disabled />
-      </FlexContainer>
+      <h1>Button &#x1F532;</h1>
+      {renderButtons()}
     </div>
   );
 }
