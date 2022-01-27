@@ -4,6 +4,8 @@
   --defaultFont: "Noto Sans", sans-serif;
   --defaultFontSize: 0.9rem;
   --primaryOutline: #3d5afe;
+  --secondary: #455a64;
+  --danger: #d32f2f;
 }
 
 body {
@@ -23,7 +25,6 @@ code {
 
 .flex-container {
   display: flex;
-  border: 2px solid black;
   width: 100%;
 }
 
@@ -47,8 +48,11 @@ button {
   outline: none;
   font-size: var(--defaultFontSize);
   border: none;
-  font-weight: 500;
+  font-weight: 700;
   border-radius: 6px;
+  letter-spacing: 1px;
+  box-shadow: 0px 2px 3px 0px #33333333;
+  width: 150px;
 }
 
 /* ******************  */
@@ -71,6 +75,7 @@ button {
 .text {
   border: none;
   background: none;
+  color: var(--primaryOutline);
 }
 
 .text:hover,
@@ -79,14 +84,39 @@ button {
   background: #2962ff1a;
 }
 
+/* sizes */
 .sm {
   padding: 6px 12px;
 }
+.md {
+  padding: 8px 16px;
+}
+.lg {
+  padding: 11px 22px;
+}
 
+/* color */
 .default {
   background: var(--defaultBg);
 }
 .primary {
   background: var(--primaryOutline);
   color: #fff;
+}
+.secondary {
+  background: var(--secondary);
+  color: #fff;
+}
+.danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+/* icons */
+
+.end-icon {
+  margin-left: 5px;
+}
+.start-icon {
+  margin-right: 5px;
 }

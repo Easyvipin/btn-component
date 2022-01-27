@@ -21,13 +21,13 @@ const Button = ({
     if (endIcon) {
       return (
         <>
-          {text} <i className={endIcon}></i>
+          {text} <i className={`${endIcon} end-icon`}></i>
         </>
       );
     } else {
       return (
         <>
-          <i className={startIcon}></i> {text}
+          <i className={`${startIcon} start-icon`}></i> {text}
         </>
       );
     }
