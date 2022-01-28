@@ -1,6 +1,8 @@
 import Button from "./Button";
 import FlexContainer from "./Component/FlexContainer";
 import { data } from "./data";
+import Navigation from "./Component/Navigation";
+import Header from "./Component/Header";
 
 function App() {
   const renderButtons = () => {
@@ -17,8 +19,14 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Button &#x1F532;</h1>
-      {renderButtons()}
+      <Header />
+      <main>
+        <Navigation />
+        <div className="style-container">
+          <h1>Button &#x1F532;</h1>
+          {renderButtons()}
+        </div>
+      </main>
     </div>
   );
 }
