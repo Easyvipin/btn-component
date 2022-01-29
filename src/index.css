@@ -40,6 +40,21 @@ a {
 a:active {
   color: black !important;
 }
+.head {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem 2rem;
+}
+
+.Header {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+mark {
+  color: #f7542e;
+  background: none;
+}
 
 .flex-container {
   display: flex;
